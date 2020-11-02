@@ -1,0 +1,54 @@
+@import ../node_modules/bootstrap/scss/bootstrap
+
+@font-face 
+    font-family: Halloween
+    src: url("../media/fonts/CFNightofTerrorPERSONAL-Reg.ttf")
+@font-face 
+    font-family: Halloween-alt
+    src: url("../media/fonts/Friday13v12.ttf")
+
+*
+    padding: 0
+    margin: 0
+    user-select: none
+
+h2
+    font-family: Halloween-alt
+
+#btn-scroll-up
+    position: fixed
+    right: 3rem
+    bottom: 3rem
+    z-index: 10
+    background: rgba(#000, 0.8)
+    color: #fff
+    padding: 1rem
+    border-radius: 50%
+    transition: background 500ms ease
+    &:hover
+        background: rgba(#000, 1)
+
+#btn-scroll-down
+    position: absolute
+    bottom: 5rem
+    color: rgba(#fff, 0.5)
+    transition: color 500ms ease
+    &:hover
+        color: rgba(#fff, 1)
+
+section
+    text-align: justify
+    padding-top: 5rem
+    .title
+        margin-bottom: 3rem
+        text-align: center
+        h2
+            font-size: 3rem
+    p
+        font-weight: 300
+        font-size: 1.5rem
+
+@import header
+@import footer
+@import origin
+@import gallery

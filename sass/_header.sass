@@ -1,0 +1,31 @@
+header
+    background: url("../media/img/bg-header.png")
+    background-size: cover
+    background-position: center
+    font-family: Halloween
+    min-height: 80vh
+    width: 100%
+    color: #fff
+    position: relative
+    .banner
+        min-height: inherit
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-end
+        align-content: center
+        text-align: center
+        padding: 5rem
+        .content
+            width: 60%
+            h1
+                font-size: 7rem
+            h2
+                font-size: 5rem
+
+@include media-breakpoint-down(lg)
+    header
+        background-position: center right
+        .banner
+            text-align: center
+            .content
+                width: 100%
